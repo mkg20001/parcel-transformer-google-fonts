@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-google-fonts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Automagically rehost google fonts by bundeling them into your application",
   "main": "src/HtmlTransformer.js",
   "engines": {
