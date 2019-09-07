@@ -10,7 +10,9 @@ Add parcel-transformer-google-fonts as a transformer for parcel by adding this t
 {
   "parcel": {
     "transforms": {
-      "*.html": ["parcel-transformer-google-fonts"]
+      "*.html": [
+        "parcel-transformer-google-fonts"
+      ]
     }
   }
 }
