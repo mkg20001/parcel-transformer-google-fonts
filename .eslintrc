@@ -1,3 +1,0 @@
-extends: /home/maciej/.eslintrc
-parserOptions:
-  sourceType: module

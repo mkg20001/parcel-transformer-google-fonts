@@ -1,8 +1,10 @@
-import path from 'path'
-import {Transformer} from '@parcel/plugin'
+'use strict'
+
+const path = require('path')
+const {Transformer} = '@parcel/plugin'
 const logic = require('./logic')
 
-export default new Transformer({
+module.exports = new Transformer({
   async transform ({asset, config, options}) {
     const {processedHtml} = await logic(
       asset.getCode(), // contents
