@@ -103,7 +103,7 @@ async function googleFontsTree (html, assetDir, cachePath, globalAssetsStore) {
     let match = fileMatches[i]
     const {path: p} = await downloadMatch(match, cachePath, globalAssetsStore, true) // download fonts
 
-    replace[match.match] = './' + p // we don't need path.realtive because the css files are stored in the same folder as the fonts
+    replace[match.match] = './' + path.basename(p) // we don't need path.realtive because the css files are stored in the same folder as the fonts
   }
 
   await Promise.all(cssFiles.map(async (match) => {
