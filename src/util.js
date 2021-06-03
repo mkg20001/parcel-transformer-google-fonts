@@ -9,7 +9,7 @@ const shortHash = str => {
 }
 const prom = fnc => new Promise((resolve, reject) => fnc((err, res) => err ? reject(err) : resolve(res)))
 
-const regex = /(https?:)?(\/\/)?(fonts\.googleapis\.com\/(css|icon)\?family=([A-Za-z0-9+:,&;=]+))/gmi
+const regex = /(https?:)?(\/\/)?(fonts\.googleapis\.com\/(css|css2|icon)\?family=([A-Za-z0-9+:,&;=@]+))/gmi
 const regexFiles = /http[s]*:\/\/(([a-z0-9_./A-Z-]+)\/([a-z0-9_./A-Z-]+))/gmi
 
 const debug = require('debug')

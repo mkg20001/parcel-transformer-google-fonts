@@ -19,5 +19,5 @@ describe('logic.js processes html page correctly', () => {
     const out = await logic(testPage, os.tmpdir(), cachePath, globalAssetsStore)
 
     console.log('%o', { out, globalAssetsStore })
-  })
+  }).timeout(10 * 1000)
 })
