@@ -1,4 +1,4 @@
-/* eslint-env mocha */
+'use strict'
 
 const os = require('os')
 const mkdirp = require('mkdirp').sync
@@ -18,6 +18,6 @@ describe('logic.js processes html page correctly', () => {
   it('works', async () => {
     const out = await logic(testPage, os.tmpdir(), cachePath, globalAssetsStore)
 
-    console.log('%o', {out, globalAssetsStore})
+    console.log('%o', { out, globalAssetsStore })
   })
 })

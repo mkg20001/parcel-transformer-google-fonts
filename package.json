@@ -8,10 +8,20 @@
     "parcel": "^2.0.0-alpha.1.1"
   },
   "dependencies": {
-    "@parcel/plugin": "^2.0.0-alpha.1.1"
+    "@parcel/plugin": "^2.0.0-alpha.3",
+    "debug": "^4.3.1",
+    "mkdirp": "^1.0.4"
+  },
+  "template": {
+    "extends": [
+      "nodeEslint"
+    ]
   },
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha -A",
+    "cov": "nyc mocha",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
   },
   "keywords": [
     "parcel",
@@ -22,7 +32,12 @@
   "author": "Maciej Krüger <mkg20001@gmail.com>",
   "license": "MPL-2.0",
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "eslint": "*",
+    "eslint-config-ipfs": "*",
+    "eslint-config-oclif": "*",
+    "mkgs-tool": "^0.1.16",
+    "mocha": "*",
+    "nyc": "*"
   },
   "directories": {
     "test": "test"
